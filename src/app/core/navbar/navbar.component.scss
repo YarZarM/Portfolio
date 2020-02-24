@@ -1,0 +1,26 @@
+.nav-row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar {
+    background: #ff8a5c;
+    padding-bottom: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    a {
+      &.nav-link {
+        padding-bottom: 5px;
+      }
+      color: #ffffff;
+    }
+    @media (min-width: 992px) {
+      a {
+        margin-right: 20px;
+      }
+      .active-li {
+        border-bottom: 5px solid #ffffff;
+      }
+    }
+  }
+  
