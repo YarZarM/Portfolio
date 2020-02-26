@@ -1,0 +1,24 @@
+<div class="row skills">
+    <div class="col-6">
+        <div class="row marginbottom" *ngFor="let res of pr_language; let index = index">
+            <div class="col-4 imgMiddle">
+                <img src={{res.image}} class="card-img-top1" alt="...">
+            </div>
+            <div class="col-8">
+                {{res.value}}
+                <progressbar [value]="res.value"></progressbar>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="row marginbottom" *ngFor="let res of framework; let index = index">
+            <div class="col-4 imgMiddle">
+                <img src={{res.image}} class="card-img-top1" alt="...">
+            </div>
+            <div class="col-8">
+                {{res.value}}
+                <progressbar [value]="res.value"></progressbar>
+            </div>
+        </div>
+    </div>
+</div>

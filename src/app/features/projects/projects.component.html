@@ -1,0 +1,46 @@
+<div *ngIf="!isLoading" class="row loader">
+    <div class="col-12">
+        <div class="d-flex justify-content-center">
+            <div class="spinner-grow" style="width: 13rem; height: 13rem;color: #ff8a5c;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div *ngIf="isLoading" class="row animated slideInUp project">
+    <div class="col-4 end">
+        <div class="card box" style="width: 18rem;height: 24rem;">
+            <img src="../../../assets/img/todo.png" class="card-img-top1" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">ToDo App</h5>
+                <p class="card-text">Simple Todo app created with angular using typescript.</p>
+                <a href="https://gitlab.com/YarZarM/text-summarization" target="_blank" class="btn btn-primary">More
+                    Info</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-4 end">
+        <div class="card box" style="width: 18rem;height: 24rem;">
+            <img src="../../../assets/img/txtsum.png" class="card-img-top2" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Text Summarizer</h5>
+                <p class="card-text">An app that can output the summarized word from the
+                    url/file.
+                </p>
+                <a href="https://github.com/YarZarM/Todo" target="_blank" class="btn btn-primary">More Info</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-4 end">
+        <div class="card box" style="width: 16rem;height: 24rem;">
+            <img src="../../../assets/img/webstore.png" class="card-img-top3" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Progressive web-store</h5>
+                <p class="card-text">WebStore for progressive web-apps</p>
+                <a href="https://gitlab.com/YarZarM/pwp-" target="_blank" class="btn btn-primary">More Info</a>
+            </div>
+        </div>
+    </div>
+</div>

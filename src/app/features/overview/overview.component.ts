@@ -9,6 +9,7 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 })
 export class OverviewComponent implements OnInit {
 
+  isLoading = false;
   modalRef: BsModalRef;
   config = {
     animated: true,
@@ -17,6 +18,9 @@ export class OverviewComponent implements OnInit {
   constructor(private modalService: BsModalService) {}
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.isLoading = true;
+    }, 3000);
   }
 
 

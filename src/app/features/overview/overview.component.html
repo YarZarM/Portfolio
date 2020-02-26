@@ -1,5 +1,15 @@
-<div class="row" style="margin: 10px;">
-    <div class="col-6 border-style">
+<div class="row whole" *ngIf="!isLoading">
+    <div class="col-12">
+        <div class="d-flex justify-content-center">
+            <div class="spinner-grow" style="width: 13rem; height: 13rem;color: #ff8a5c;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>    
+    </div>
+</div>
+
+<div *ngIf="isLoading" class="row" style="margin: 10px;">
+    <div class="col-6 border-style animated slideInUp">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -27,7 +37,7 @@
             </a>
         </div>
     </div>
-    <div class="col-6">
+    <div class="col-6 animated slideInUp">
         <div class="row">
             <div class="col-12">
                 <h1>Overview</h1>
@@ -45,7 +55,7 @@
     </div>
 </div>
 
-<div class="row" style="margin: 10px;padding: 10px;">
+<div *ngIf="isLoading" class="row animated slideInRight" style="margin: 10px;padding: 10px;">
     <div class="col-4 card-style">
         <div class="card box" style="width: 18rem;" (click)="openModal(template)">
             <div class="card-body">
@@ -53,14 +63,14 @@
             </div>
         </div>
     </div>
-    <div class="col-4 card-style">
+    <div class="col-4 slideInRight card-style">
         <div class="card box" style="width: 18rem;" (click)="openSecondModel(template2)">
             <div class="card-body">
                 <h5 class="card-title">Education</h5>
             </div>
         </div>
     </div>
-    <div class="col-4 card-style" (click)="openThirdModal(template3)">
+    <div class="col-4 slideInRight card-style" (click)="openThirdModal(template3)">
         <div class="card box" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Languages</h5>
@@ -79,11 +89,20 @@
     </div>
     <div class="modal-body">
         <ul>
-            <li><h5>JUN(2017)-DEC(2018) - Work as a front-end developer in a company called CODIUM which is based in Thailand,Bangkok</h5></li>
-            <li><h5>JUN(2015)-AUG(2015) - Intern at VGL lab,AIT,Thailand. Built the motorcycle helmet detection system that used OpenCV. The system detect whether the people 
-                wore helmet or not from CCTV. It used OpenCV,HOG and Haar Cascades. The accuracy rate was 87%.
-            </h5></li>
-            <li><h5>NOV(2015)-JAN(2016) - Student Assistantship in AIT,Thailand. Helped developed a project called red light trafficking.</h5></li>
+            <li>
+                <h5>JUN(2017)-DEC(2018) - Work as a front-end developer in a company called CODIUM which is based in
+                    Thailand,Bangkok</h5>
+            </li>
+            <li>
+                <h5>JUN(2015)-AUG(2015) - Intern at VGL lab,AIT,Thailand. Built the motorcycle helmet detection system
+                    that used OpenCV. The system detect whether the people
+                    wore helmet or not from CCTV. It used OpenCV,HOG and Haar Cascades. The accuracy rate was 87%.
+                </h5>
+            </li>
+            <li>
+                <h5>NOV(2015)-JAN(2016) - Student Assistantship in AIT,Thailand. Helped developed a project called red
+                    light trafficking.</h5>
+            </li>
         </ul>
     </div>
 </ng-template>
@@ -97,10 +116,17 @@
     </div>
     <div class="modal-body">
         <ul>
-            <li><h5>SEP(2019)-Present - University of Oulu<br>Master's Programming in Computer Science and Engineering</h5></li>
-            <li><h5>SEP(2012)-MAY(2017) - Asian Institute of Technology, Thailand<br>Bachelor of Science in Engineering Information and Communication Technology
-            <br>Advisor: Dr.Matthew N.Dailey <br>Major: Information and Communication Technology <br> Thesis: "Gender Classification Using Gabor PCA and SVM"
-            </h5></li>
+            <li>
+                <h5>SEP(2019)-Present - University of Oulu<br>Master's Programming in Computer Science and Engineering
+                </h5>
+            </li>
+            <li>
+                <h5>SEP(2012)-MAY(2017) - Asian Institute of Technology, Thailand<br>Bachelor of Science in Engineering
+                    Information and Communication Technology
+                    <br>Advisor: Dr.Matthew N.Dailey <br>Major: Information and Communication Technology <br> Thesis:
+                    "Gender Classification Using Gabor PCA and SVM"
+                </h5>
+            </li>
         </ul>
     </div>
 </ng-template>
@@ -114,9 +140,15 @@
     </div>
     <div class="modal-body">
         <ul>
-            <li><h5>English(Fluent)</h5></li>
-            <li><h5>Myanmar(Native)</h5></li>
-            <li><h5>Japanese(Basic)</h5></li>
+            <li>
+                <h5>English(Fluent)</h5>
+            </li>
+            <li>
+                <h5>Myanmar(Native)</h5>
+            </li>
+            <li>
+                <h5>Japanese(Basic)</h5>
+            </li>
         </ul>
     </div>
 </ng-template>

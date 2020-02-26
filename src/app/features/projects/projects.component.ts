@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-dahsboard',
-  templateUrl: './dahsboard.component.html',
-  styleUrls: ['./dahsboard.component.scss']
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.scss']
 })
-export class DahsboardComponent implements OnInit {
+export class ProjectsComponent implements OnInit {
 
   isLoading = false;
 
