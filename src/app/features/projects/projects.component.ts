@@ -25,17 +25,14 @@ export class ProjectsComponent implements OnInit {
 
   onResize(event) {
     if (event.target.innerWidth > 1133) {
-      console.log('des', event.target.innerWidth)
       this.isDesktop = true;
       this.isTabletSize = false;
       this.isMobile = false;
-    } else if (event.target.innerWidth >= 480 && event.target.innerWidth <= 1133) {
+    } else if (event.target.innerWidth >= 501 && event.target.innerWidth <= 1133) {
       this.isDesktop = false;
       this.isTabletSize = true;
       this.isMobile = false;
-      console.log('tablet', this.isTabletSize)
-    } else if (event.target.innerWidth < 480) {
-      console.log('mob', event.target.innerWidth)
+    } else if (event.target.innerWidth < 501) {
       this.isDesktop = false;
       this.isTabletSize = false;
       this.isMobile = true;
@@ -47,11 +44,10 @@ export class ProjectsComponent implements OnInit {
       this.isDesktop = true;
       this.isTabletSize = false;
       this.isMobile = false;
-    } else if (window.innerWidth >= 480 && window.innerWidth <= 1133) {
+    } else if (window.innerWidth >= 501 && window.innerWidth <= 1133) {
       this.isDesktop = false;
       this.isTabletSize = true;
       this.isMobile = false;
-      console.log("herer")
     } else {
       this.isDesktop = false;
       this.isTabletSize = false;
