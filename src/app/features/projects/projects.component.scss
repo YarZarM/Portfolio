@@ -6,15 +6,15 @@
 }
 
 .loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .end {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .box {
@@ -27,29 +27,18 @@
   border-radius: 5px;
 }
 
-.card {
-  @media (min-width: 501px) and (max-width: 691px) {
-    width: 18rem;
-    height: 34rem;
-  }
-  @media (min-width: 692px) and (max-width: 1133px) {
-    width: 18rem;
-    height: 27rem;
-  }
-}
-
 .card-img-top3 {
-  background: #a9fffd;
+    background: #a9fffd;
 }
 
 .card-img-top2 {
-  background: #f3dfe3;
+    background: #f3dfe3;
 }
 
 .card-img-top1 {
-  background: #ccedd2;
+    background: #ccedd2;
 }
 
 .row {
-  margin: 0px;
+    margin: 0px;
 }
