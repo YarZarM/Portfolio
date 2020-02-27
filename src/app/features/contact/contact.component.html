@@ -1,1 +1,82 @@
-<p>contact works!</p>
+<div *ngIf="!isLoading" class="row loader">
+    <div class="col-12">
+        <div class="d-flex justify-content-center">
+            <div class="spinner-grow" style="width: 13rem; height: 13rem;color: #ff8a5c;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="isLoading && isDesktop" class="row whole" (window:resize)="onResize($event)">
+    <div class="col-6 border-left animated rollIn">
+        <p class="contact">Contact Me</p>
+    </div>
+    <div class="col-6 animated fadeInRightBig">
+        <div class="row">
+            <div class="col-12">
+                <p class="sub-contact"><i class="far fa-envelope fa-lg"></i>yzmm95@gmail.com</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+               <p class="sub-contact"><i class="fas fa-phone fa-lg"></i>+358 044 910 7248</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <a class="sub-contact" style="border: 0;" href="https://www.linkedin.com/in/yar-zar-moe-myint-8a3b85179/" target="_blank"><i class="fab fa-linkedin fa-lg"></i>YarZarMLinkedin</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="isLoading && isTabletSize" class="row whole" (window:resize)="onResize($event)">
+    <div class="col-6 border-left animated rollIn">
+        <p class="contact">Contact Me</p>
+    </div>
+    <div class="col-6 animated fadeInRightBig">
+        <div class="row">
+            <div class="col-12">
+                <p class="sub-contact"><i class="far fa-envelope fa-lg"></i>yzmm95@gmail.com</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+               <p class="sub-contact"><i class="fas fa-phone fa-lg"></i>+358 044 910 7248</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <a class="sub-contact" style="border: 0;" href="https://www.linkedin.com/in/yar-zar-moe-myint-8a3b85179/" target="_blank"><i class="fab fa-linkedin fa-lg"></i>YarZarMLinkedin</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="isLoading && isMobile" class="whole" (window:resize)="onResize($event)">
+    <div class="row">
+        <div class="col-12 border-bottom animated rollIn">
+            <p class="contact">Contact Me</p>
+        </div>
+    </div>
+    <div class="row" style="margin-top:  10px;">
+        <div class="col-12 animated fadeInRightBig">
+            <div class="row">
+                <div class="col-12">
+                    <p class="sub-contact"><i class="far fa-envelope fa-lg"></i>yzmm95@gmail.com</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                   <p class="sub-contact"><i class="fas fa-phone fa-lg"></i>+358 044 910 7248</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a class="sub-contact" style="border: 0;" href="https://www.linkedin.com/in/yar-zar-moe-myint-8a3b85179/" target="_blank"><i class="fab fa-linkedin fa-lg"></i>YarZarMLinkedin</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

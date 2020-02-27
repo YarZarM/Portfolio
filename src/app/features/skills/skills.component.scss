@@ -1,20 +1,72 @@
 img {
-    height: 65px;
+  height: 65px;
 }
 
 .skills {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 10px;
 }
 
 .marginbottom {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .imgMiddle {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+h5 {
+  font-family: "futura_de";
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    font-size: 1.2rem;
+  }
+}
+
+h1 {
+  font-family: "futura_de";
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.value {
+  font-family: "futura_de";
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    font-size: 1.2rem;
+  }
+}
+
+::ng-deep .progress {
+  border-radius: 1.25rem !important;
+  box-shadow: 0 5px 15px 0 rgba(7, 33, 66, 0.15) !important;
+}
+
+::ng-deep .progress-bar {
+  background-color: #ff8a5c !important;
+  border-radius: 1.25rem !important;
+  box-shadow: 0 5px 15px 0 rgba(7, 33, 66, 0.15) !important;
+}
+
+.row {
+  margin: 0px;
 }

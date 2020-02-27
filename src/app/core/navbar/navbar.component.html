@@ -1,30 +1,81 @@
-<nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" [routerLink]="['/dashboard']"><img src="../../../assets/img/YZlogo.png" width="15%">
-    </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+<nav class="navbar navbar-expand-lg" *ngIf="isDesktop" (window:resize)="onResize($event)">
+  <img src="../../../assets/img/YZlogo.png" width="2%" (click)="openHome()">
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <i class="fas fa-bars"></i>
+  </button> -->
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav" style="width: 100%;">
       <div class="row nav-row">
-        <div class="col-2">
+        <div class="col-2 nav-center">
           <a class="nav-item nav-link" [routerLink]="['/overview']"><i class="far fa-address-card fa-lg"></i>
             ABOUT</a>
         </div>
-        <div class="col-2">
+        <div class="col-2 nav-center">
           <a class="nav-item nav-link" [routerLink]="['/projects']"><i class="fas fa-tasks fa-lg"></i>
             PROJECTS</a>
         </div>
-        <div class="col-2">
+        <div class="col-2 nav-center">
           <a class="nav-item nav-link" [routerLink]="['/skills']"><i class="fas fa-laptop-code fa-lg"></i>
             SKILLS</a>
         </div>
-        <div class="col-2">
+        <div class="col-2 nav-center">
           <a class="nav-item nav-link" [routerLink]="['/contact']"><i class="far fa-envelope fa-lg"></i>
             CONTACT</a>
         </div>
       </div>
     </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg" *ngIf="isTabletSize" (window:resize)="onResize($event)">
+  <img src="../../../assets/img/YZlogo.png" width="3%" (click)="openHome()" data-toggle="collapse"
+    data-target=".navbar-collapse.show">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <ul class="navbar-nav tablet" style="width: 100%;">
+      <li> <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"
+          [routerLink]="['/overview']"><i class="far fa-address-card fa-lg"></i>
+          ABOUT</a></li>
+      <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"
+          [routerLink]="['/projects']"><i class="fas fa-tasks fa-lg"></i>
+          PROJECTS</a></li>
+      <li> <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"
+          [routerLink]="['/skills']"><i class="fas fa-laptop-code fa-lg"></i>
+          SKILLS</a></li>
+      <li> <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"
+          [routerLink]="['/contact']"><i class="far fa-envelope fa-lg"></i>
+          CONTACT</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg" *ngIf="isMobile" (window:resize)="onResize($event)">
+  <img src="../../../assets/img/YZlogo.png" width="5%" (click)="openHome()" data-toggle="collapse"
+    data-target=".navbar-collapse.show">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <ul class="navbar-nav tablet" style="width: 100%;">
+      <li> <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"
+          [routerLink]="['/overview']"><i class="far fa-address-card fa-lg"></i>
+          ABOUT</a></li>
+      <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"
+          [routerLink]="['/projects']"><i class="fas fa-tasks fa-lg"></i>
+          PROJECTS</a></li>
+      <li> <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"
+          [routerLink]="['/skills']"><i class="fas fa-laptop-code fa-lg"></i>
+          SKILLS</a></li>
+      <li> <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"
+          [routerLink]="['/contact']"><i class="far fa-envelope fa-lg"></i>
+          CONTACT</a></li>
+    </ul>
   </div>
 </nav>

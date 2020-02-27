@@ -43,7 +43,7 @@ img {
 hr {
   border: 0;
   // border-bottom: 1px solid #ffffff;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #15273d;
 }
 
 h1 {
@@ -51,7 +51,7 @@ h1 {
   font-size: 65px;
   font-weight: bold;
   // color: #ffffff;
-  color: #000000;
+  color: #15273d;
 }
 
 h5 {
@@ -61,7 +61,7 @@ h5 {
 h2 {
   font-size: 22px;
   // color: #ffffff;
-  color: #000000;
+  color: #15273d;
   // font-weight: bold;
 }
 
@@ -156,4 +156,8 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.row {
+    margin: 0px;
 }

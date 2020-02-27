@@ -1,23 +1,169 @@
-<div class="row skills">
+<div *ngIf="!isLoading" class="row loader">
+    <div class="col-12">
+        <div class="d-flex justify-content-center">
+            <div class="spinner-grow" style="width: 13rem; height: 13rem;color: #ff8a5c;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="isLoading && isDesktop" class="row skills" (window:resize)="onResize($event)">
     <div class="col-6">
-        <div class="row marginbottom" *ngFor="let res of pr_language; let index = index">
+        <div class="row animated slideInDown">
+            <div class="col-12" style="text-align: center;">
+                <h1>Programming Languages</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row marginbottom animated lightSpeedIn" *ngFor="let res of pr_language; let index = index">
             <div class="col-4 imgMiddle">
                 <img src={{res.image}} class="card-img-top1" alt="...">
             </div>
             <div class="col-8">
-                {{res.value}}
+                <div class="row" style="height: 55%;">
+                    <div class="col-6">
+                        <h5>{{res.framework}}</h5>
+                    </div>
+                    <div class="col-6" style="text-align: right;">
+                        <p class="value">{{res.value}}</p>
+                    </div>
+                </div>
                 <progressbar [value]="res.value"></progressbar>
             </div>
         </div>
     </div>
     <div class="col-6">
-        <div class="row marginbottom" *ngFor="let res of framework; let index = index">
+        <div class="row animated slideInDown">
+            <div class="col-12" style="text-align: center;">
+                <h1>Framework</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row marginbottom animated lightSpeedIn" *ngFor="let res of framework; let index = index">
             <div class="col-4 imgMiddle">
                 <img src={{res.image}} class="card-img-top1" alt="...">
             </div>
             <div class="col-8">
-                {{res.value}}
+                <div class="row" style="height: 55%;">
+                    <div class="col-6">
+                        <h5>{{res.framework}}</h5>
+                    </div>
+                    <div class="col-6" style="text-align: right;">
+                        <p class="value">{{res.value}}</p>
+                    </div>
+                </div>
                 <progressbar [value]="res.value"></progressbar>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="isLoading && isTabletSize" class="row skills" (window:resize)="onResize($event)">
+    <div class="row" style="width:651px">
+        <div class="col-12">
+            <div class="row animated slideInDown">
+                <div class="col-12" style="text-align: center;">
+                    <h1>Programming Languages</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row marginbottom animated lightSpeedIn" *ngFor="let res of pr_language; let index = index">
+                <div class="col-4 imgMiddle">
+                    <img src={{res.image}} class="card-img-top1" alt="...">
+                </div>
+                <div class="col-8">
+                    <div class="row" style="height: 55%;">
+                        <div class="col-6">
+                            <h5>{{res.framework}}</h5>
+                        </div>
+                        <div class="col-6" style="text-align: right;">
+                            <p class="value">{{res.value}}</p>
+                        </div>
+                    </div>
+                    <progressbar [value]="res.value"></progressbar>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="row animated slideInDown">
+                <div class="col-12" style="text-align: center;">
+                    <h1>Framework</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row marginbottom animated lightSpeedIn" *ngFor="let res of framework; let index = index">
+                <div class="col-4 imgMiddle">
+                    <img src={{res.image}} class="card-img-top1" alt="...">
+                </div>
+                <div class="col-8">
+                    <div class="row" style="height: 55%;">
+                        <div class="col-6">
+                            <h5>{{res.framework}}</h5>
+                        </div>
+                        <div class="col-6" style="text-align: right;">
+                            <p class="value">{{res.value}}</p>
+                        </div>
+                    </div>
+                    <progressbar [value]="res.value"></progressbar>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="isLoading && isMobile" class="row skills" (window:resize)="onResize($event)">
+    <div class="row">
+        <div class="col-12">
+            <div class="row animated slideInDown">
+                <div class="col-12" style="text-align: center;">
+                    <h1>Programming Languages</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row marginbottom animated lightSpeedIn" *ngFor="let res of pr_language; let index = index">
+                <div class="col-4 imgMiddle">
+                    <img src={{res.image}} class="card-img-top1" alt="...">
+                </div>
+                <div class="col-8">
+                    <div class="row" style="height: 55%;">
+                        <div class="col-6">
+                            <h5>{{res.framework}}</h5>
+                        </div>
+                        <div class="col-6" style="text-align: right;">
+                            <p class="value">{{res.value}}</p>
+                        </div>
+                    </div>
+                    <progressbar [value]="res.value"></progressbar>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="row animated slideInDown">
+                <div class="col-12" style="text-align: center;">
+                    <h1>Framework</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row marginbottom animated lightSpeedIn" *ngFor="let res of framework; let index = index">
+                <div class="col-4 imgMiddle">
+                    <img src={{res.image}} class="card-img-top1" alt="...">
+                </div>
+                <div class="col-8">
+                    <div class="row" style="height: 55%;">
+                        <div class="col-6">
+                            <h5>{{res.framework}}</h5>
+                        </div>
+                        <div class="col-6" style="text-align: right;">
+                            <p class="value">{{res.value}}</p>
+                        </div>
+                    </div>
+                    <progressbar [value]="res.value"></progressbar>
+                </div>
             </div>
         </div>
     </div>
