@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
 <div class="whole">
-    <button (click)="installPwa()">
+    <button *ngIf="Pwa.promptEvent" (click)="installPwa()">
         Install
     </button>
     <router-outlet></router-outlet>
