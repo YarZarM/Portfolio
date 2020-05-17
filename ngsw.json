@@ -1,0 +1,116 @@
+{
+  "configVersion": 1,
+  "timestamp": 1589668907087,
+  "index": "https://YarZarM.github.io/Portfolio/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://YarZarM.github.io/Portfolio/favicon.ico",
+        "https://YarZarM.github.io/Portfolio/index.html",
+        "https://YarZarM.github.io/Portfolio/main-es2015.8b538618c4626c2f12c5.js",
+        "https://YarZarM.github.io/Portfolio/main-es5.8b538618c4626c2f12c5.js",
+        "https://YarZarM.github.io/Portfolio/manifest.webmanifest",
+        "https://YarZarM.github.io/Portfolio/polyfills-es2015.ca64e4516afbb1b890d5.js",
+        "https://YarZarM.github.io/Portfolio/polyfills-es5.277e2e1d6fb2daf91a5c.js",
+        "https://YarZarM.github.io/Portfolio/runtime-es2015.0811dcefd377500b5b1a.js",
+        "https://YarZarM.github.io/Portfolio/runtime-es5.0811dcefd377500b5b1a.js",
+        "https://YarZarM.github.io/Portfolio/styles.0c9ce47004b373153bae.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://YarZarM.github.io/Portfolio/assets/icons/icon-120x120.png",
+        "https://YarZarM.github.io/Portfolio/assets/icons/icon-144x144.png",
+        "https://YarZarM.github.io/Portfolio/assets/icons/icon-150x150.png",
+        "https://YarZarM.github.io/Portfolio/assets/icons/icon-192x192.png",
+        "https://YarZarM.github.io/Portfolio/assets/icons/icon-310x310.png",
+        "https://YarZarM.github.io/Portfolio/assets/icons/icon-72x72.png",
+        "https://YarZarM.github.io/Portfolio/assets/icons/icon-96x96.png",
+        "https://YarZarM.github.io/Portfolio/assets/img/YZlogo.png",
+        "https://YarZarM.github.io/Portfolio/assets/img/angular.png",
+        "https://YarZarM.github.io/Portfolio/assets/img/c++.png",
+        "https://YarZarM.github.io/Portfolio/assets/img/cover.jpg",
+        "https://YarZarM.github.io/Portfolio/assets/img/css.png",
+        "https://YarZarM.github.io/Portfolio/assets/img/favicon-32x32.png",
+        "https://YarZarM.github.io/Portfolio/assets/img/git.png",
+        "https://YarZarM.github.io/Portfolio/assets/img/javascript.jpg",
+        "https://YarZarM.github.io/Portfolio/assets/img/nativesc.png",
+        "https://YarZarM.github.io/Portfolio/assets/img/opencv.png",
+        "https://YarZarM.github.io/Portfolio/assets/img/python.png",
+        "https://YarZarM.github.io/Portfolio/assets/img/pytorch.png",
+        "https://YarZarM.github.io/Portfolio/assets/img/todo.png",
+        "https://YarZarM.github.io/Portfolio/assets/img/txtsum.png",
+        "https://YarZarM.github.io/Portfolio/assets/img/type.png",
+        "https://YarZarM.github.io/Portfolio/assets/img/webstore.png",
+        "https://YarZarM.github.io/Portfolio/assets/img/yz.jpg",
+        "https://YarZarM.github.io/Portfolio/assets/img/yz2.jpg",
+        "https://YarZarM.github.io/Portfolio/assets/img/yz3.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://YarZarM.github.io/Portfolio/assets/icons/icon-120x120.png": "e7a5569bda0fd77719f0aedcf12fa8ded3e84dc6",
+    "https://YarZarM.github.io/Portfolio/assets/icons/icon-144x144.png": "7245114d407b563ea7aea4c304a60471f215a663",
+    "https://YarZarM.github.io/Portfolio/assets/icons/icon-150x150.png": "45591cd0d394e511ecb204beefb55009ded06940",
+    "https://YarZarM.github.io/Portfolio/assets/icons/icon-192x192.png": "20187e9e7d4ad918f67ddf54b5905dcb572d6b14",
+    "https://YarZarM.github.io/Portfolio/assets/icons/icon-310x310.png": "6cd35e4216a931a0bb27cea11cd47cfdbea153b9",
+    "https://YarZarM.github.io/Portfolio/assets/icons/icon-72x72.png": "444dba9570fd6b5dd53005cfa4588376f35a4864",
+    "https://YarZarM.github.io/Portfolio/assets/icons/icon-96x96.png": "4e4b1c1a7c36487b5b5e219336325805d196f56d",
+    "https://YarZarM.github.io/Portfolio/assets/img/YZlogo.png": "2d2b91eefeaf16def745025e83efb3e8dbebc21d",
+    "https://YarZarM.github.io/Portfolio/assets/img/angular.png": "9caba13892cc1eb881651080340dc65b0fdcee4c",
+    "https://YarZarM.github.io/Portfolio/assets/img/c++.png": "97b698d67530d0ceeb80dc08d4b3b56632017425",
+    "https://YarZarM.github.io/Portfolio/assets/img/cover.jpg": "c55856f1074a76c0613b7249fa2847b58b2160cd",
+    "https://YarZarM.github.io/Portfolio/assets/img/css.png": "f5324f05a3f1fab685bcfe7270d4694aeb2003ae",
+    "https://YarZarM.github.io/Portfolio/assets/img/favicon-32x32.png": "fd965efe1c6d024d2d89254fe70d5ae9546cbd8c",
+    "https://YarZarM.github.io/Portfolio/assets/img/git.png": "137b28c868e0ccb0abccd75d47b02216fa9cd8de",
+    "https://YarZarM.github.io/Portfolio/assets/img/javascript.jpg": "d1683bdb57dab94c67d6609c770382a34038e48b",
+    "https://YarZarM.github.io/Portfolio/assets/img/nativesc.png": "c44bd3a7d70eaa712f87f1ab028e6345e80b2032",
+    "https://YarZarM.github.io/Portfolio/assets/img/opencv.png": "c62adadc73008de6b713a12168123e55cc12f3c7",
+    "https://YarZarM.github.io/Portfolio/assets/img/python.png": "79dac0dd0d61cfc06b2eb2bc06b8239cc1e0a88b",
+    "https://YarZarM.github.io/Portfolio/assets/img/pytorch.png": "df6c3835612749a3fd27ff89782facc86b6ddec6",
+    "https://YarZarM.github.io/Portfolio/assets/img/todo.png": "70579db2b9c7f43f2611b450eafec78ea754d2f6",
+    "https://YarZarM.github.io/Portfolio/assets/img/txtsum.png": "0f0f31e7632863834faab840d6d9cbd2a4932452",
+    "https://YarZarM.github.io/Portfolio/assets/img/type.png": "5909b69868af020787e07e6cdee3b62ddb053a0d",
+    "https://YarZarM.github.io/Portfolio/assets/img/webstore.png": "a543685c6f984b83bd5c03d4318211f7f955b2ef",
+    "https://YarZarM.github.io/Portfolio/assets/img/yz.jpg": "63e3fe22c2c64a87e37915860f85a853ca65aad3",
+    "https://YarZarM.github.io/Portfolio/assets/img/yz2.jpg": "2bf5a6c131b8be109412eb7917f11bb1559df690",
+    "https://YarZarM.github.io/Portfolio/assets/img/yz3.jpg": "6b59a6013be05d25edeb00a5bdd2340ad594d291",
+    "https://YarZarM.github.io/Portfolio/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://YarZarM.github.io/Portfolio/index.html": "dcede93024dae0f5926a28d75342bdc69fad5224",
+    "https://YarZarM.github.io/Portfolio/main-es2015.8b538618c4626c2f12c5.js": "ec7f278fe6dd6a41cd5fa2bbf223d5914e174d95",
+    "https://YarZarM.github.io/Portfolio/main-es5.8b538618c4626c2f12c5.js": "b63cbe0b6e2fc7a7f30bf61944b54c9baa5dec38",
+    "https://YarZarM.github.io/Portfolio/manifest.webmanifest": "e14484a4f652e2f158ec8045c44ef1b6d61e9f2d",
+    "https://YarZarM.github.io/Portfolio/polyfills-es2015.ca64e4516afbb1b890d5.js": "8779ed8d9bf0580e1b50b352a9b8fd520be24433",
+    "https://YarZarM.github.io/Portfolio/polyfills-es5.277e2e1d6fb2daf91a5c.js": "8d03638471d7374e81cf33adfdea439f84ac3873",
+    "https://YarZarM.github.io/Portfolio/runtime-es2015.0811dcefd377500b5b1a.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://YarZarM.github.io/Portfolio/runtime-es5.0811dcefd377500b5b1a.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://YarZarM.github.io/Portfolio/styles.0c9ce47004b373153bae.css": "aeda41f1ff9f0c663239e2d90aad84a5caa0422f"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
