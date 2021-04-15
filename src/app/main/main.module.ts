@@ -6,13 +6,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { MainComponent } from './main.component';
 import { MainRoutingModule } from './main-routing.module';
 import { NavbarComponent } from '../core/navbar/navbar.component';
-import { CoreModule } from '../core/core.module';
+// import { CoreModule } from '../core/core.module';
 import { FeaturesModule } from '../features/features.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    CoreModule,
     FeaturesModule,
     MainRoutingModule,
     RouterModule,
